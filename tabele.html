@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>Tabele</title>
+		<meta charset="UTF-8" />
+		<meta name="keywords" content="zadania, dla, najlepszego, nauczyciela, moj, piekny, serwer" />
+		<meta name="description" content="Tabele - Konrad Nowak" />
+		<meta name="author" content="Konrad Nowak" />
+		<meta name="robots" content="all" />
+
+		<style>
+			body {
+				text-align: center;
+			}
+			
+			table {
+				margin: 0 auto;
+				margin-bottom: 65px;
+				border-collapse: collapse;
+			}
+			
+			td, th {
+				padding: 15px;
+			}
+			
+			th {
+				background-color: #9042f5;
+			}
+			
+			.marker1 {
+				background-color: #87ffcb;
+			}
+			
+			.marker2 {
+				background-color: #65dda9;
+			}
+		</style>
+	</head> 
+	
+	<body>
+		<h1>Tabela bez scalania</h1>
+		<table border="1">
+			<tr>
+				<th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+			</tr>
+			<tr>
+				<th>2</th> <td>a</td> <td class="marker1">b</td> <td class="marker1">c</td> <td>d</td> <td>e</td>
+			</tr>
+			<tr>
+				<th>3</th> <td>f</td> <td>g</td> <td>h</td> <td>i</td> <td class="marker1">j</td>
+			</tr>
+			<tr>
+				<th>4</th> <td>k</td> <td>l</td> <td>m</td> <td>n</td> <td class="marker1">o</td>
+			</tr>
+			<tr>
+				<th>5</th> <td class="marker2">p</td> <td class="marker2">q</td> <td class="marker2">r</td> <td>s</td> <td>t</td>
+			</tr>
+			<tr>
+				<th>6</th> <td class="marker2">u</td> <td class="marker2">v</td> <td class="marker2">w</td> <td>y</td> <td>z</td>
+			</tr>
+		</table>
+		
+		<h1>Tabela z scalaniem</h1>
+		<table border="1">
+			<tr>
+				<th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+			</tr>
+			<tr>
+				<th>2</th> <td>a</td> <td colspan="2" class="marker1">b, c</td> <td>d</td> <td>e</td>
+			</tr>
+			<tr>
+				<th>3</th> <td>f</td> <td>g</td> <td>h</td> <td>i</td> <td rowspan="2" class="marker1">j, o</td>
+			</tr>
+			<tr>
+				<th>4</th> <td>k</td> <td>l</td> <td>m</td> <td>n</td>
+			</tr>
+			<tr>
+				<th>5</th> <td colspan="3" rowspan="2" class="marker2">p, q, r, u, v, w</td> <td>s</td> <td>t</td>
+			</tr>
+			<tr>
+				<th>6</th> <td>y</td> <td>z</td>
+			</tr>
+		</table>
+		
+		<h1>Tabela z scalonymi inicjałami</h1>
+		<table border="1">
+			<tr>
+				<th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+			</tr>
+			<tr>
+				<th>2</th> <td>a</td> <td>b</td> <td>c</td> <td>d</td> <td>e</td>
+			</tr>
+			<tr>
+				<th>3</th> <td>f</td> <td>g</td> <td>h</td> <td>i</td> <td>j</td>
+			</tr>
+			<tr>
+				<th>4</th> <td colspan="4" class="marker2">k, l, m, n</td> <td>o</td>
+			</tr>
+			<tr>
+				<th>5</th> <td>p</td> <td>q</td> <td>r</td> <td>s</td> <td>t</td>
+			</tr>
+			<tr>
+				<th>6</th> <td>u</td> <td>v</td> <td>w</td> <td>y</td> <td>z</td>
+			</tr>
+		</table>
+	</body> 
+</html>
